@@ -6,6 +6,7 @@ public class CellphoneApplication {
     public static void main(String[] args) {
         CellPhone cellPhone1 = new CellPhone();
         CellPhone cellPhone2 = new CellPhone();
+        CellPhone cellPhone3 = new CellPhone();
 
         Scanner input = new Scanner(System.in);
 
@@ -53,13 +54,18 @@ public class CellphoneApplication {
         String owner2 = input.nextLine();
         cellPhone2.setOwner(owner2);
 
+        System.out.println("Enter the information for CellPhone 3:");
+        cellPhone3(int 300300, String "IPhone", String "T-Moble", String "704-200-8280", String "Carrie Johnson");
+
         input.close();
 
         display(cellPhone1);
         display(cellPhone2);
+        display(cellPhone3);
 
         cellPhone1.dial(cellPhone2.getPhoneNum());
         cellPhone2.dial(cellPhone1.getPhoneNum());
+        cellPhone3.dial(cellPhone2.getPhoneNum());
 
 
 
