@@ -6,7 +6,6 @@ public class CellphoneApplication {
     public static void main(String[] args) {
         CellPhone cellPhone1 = new CellPhone();
         CellPhone cellPhone2 = new CellPhone();
-        CellPhone cellPhone3 = new CellPhone();
 
         Scanner input = new Scanner(System.in);
 
@@ -55,7 +54,21 @@ public class CellphoneApplication {
         cellPhone2.setOwner(owner2);
 
         System.out.println("Enter the information for CellPhone 3:");
-        cellPhone3(int 300300, String "IPhone", String "T-Moble", String "704-200-8280", String "Carrie Johnson");
+        System.out.print("Enter Serial Number: ");
+        CellPhone cellPhone3 = new CellPhone(int serialNum3, )
+
+        System.out.print("Enter Model of Phone: ");
+        String model3 = input.nextLine();
+
+        System.out.print("Enter the Carrier: ");
+        String carrier3 = input.nextLine();
+
+        System.out.print("Enter the Phone Number: ");
+        String phoneNum3 = input.nextLine();
+
+        System.out.print("Enter name of Owner: ");
+        String owner3 = input.nextLine();
+
 
         input.close();
 
@@ -77,6 +90,9 @@ public class CellphoneApplication {
         System.out.println("Carrier: " + phone.getCarrier());
         System.out.println("Phone Number: " + phone.getPhoneNum());
         System.out.println("Owner: " + phone.getOwner());
+    }
+    public static void display(CellPhone phone){
+
     }
 
 
