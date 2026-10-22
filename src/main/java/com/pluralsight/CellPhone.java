@@ -16,6 +16,45 @@ public class CellPhone {
         this.owner = "";
     }
 
+    // All 5 parameters
+    public CellPhone(int serialNum, String model, String carrier, String phoneNum, String owner) {
+        this.serialNum = serialNum;
+        this.model = model;
+        this.carrier = carrier;
+        this.phoneNum = phoneNum;
+        this.owner = owner;
+    }
+
+    // 4 parameters
+    public CellPhone(int serialNum, String model, String carrier, String phoneNum) {
+        this.serialNum = serialNum;
+        this.model = model;
+        this.carrier = carrier;
+        this.phoneNum = phoneNum;
+    }
+
+    // 3 parameters
+    public CellPhone(int serialNum, String model, String carrier) {
+        this.serialNum = serialNum;
+        this.model = model;
+        this.carrier = carrier;
+    }
+
+    // 2 parameters
+    public CellPhone(int serialNum, String model) {
+        this.serialNum = serialNum;
+        this.model = model;
+    }
+
+    // individual parameters
+    public CellPhone(int serialNum) {
+        this.serialNum = serialNum;
+    }
+
+    public CellPhone(String model) {
+        this.model = model;
+    }
+
     // Getter and Setter
     public int getSerialNum() {
         return serialNum;
